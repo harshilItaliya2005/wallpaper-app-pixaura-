@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="16dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <TextView android:id="@+id/title" android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:layout_weight="1" android:layout_height="wrap_content"
+        android:text="@string/navigate_title" android:textSize="16sp"/>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:contentDescription="@string/go"
+        android:src="@drawable/outline_arrow_forward_ios_24"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

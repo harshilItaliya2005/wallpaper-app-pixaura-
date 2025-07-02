@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light theme -->
+    <color name="background">#3F51B5</color>
+    <color name="buttonPrimary">#DF1F5A</color>
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#6E6E6E</color>
+    <color name="bottomBarColor">#131521</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="lightGray">#BDBDBD</color>
+    <color name="softBlack">#757575</color>
+    <color name="barColor">#3F51B5</color>
+    <color name="dark_gray">#424242</color>
+    <color name="red">#FF0000</color>
+
+
+</resources>
