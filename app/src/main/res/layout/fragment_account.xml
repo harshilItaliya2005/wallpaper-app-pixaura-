@@ -83,33 +83,7 @@
             android:divider="@android:color/darker_gray"
             android:dividerPadding="8dp">
 
-            <!-- My Account -->
-            <LinearLayout
-                android:id="@+id/myAccount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="12dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center_vertical"
-                tools:ignore="UseCompoundDrawables">
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/round_account_circle_24"
-                    android:contentDescription="@string/my_account"
-                    app:tint="@color/black" />
-
-                <TextView
-                    android:layout_marginStart="16dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/my_account"
-                    android:textSize="16sp"
-                    android:textColor="@color/black" />
-            </LinearLayout>
 
             <!-- Download -->
             <LinearLayout

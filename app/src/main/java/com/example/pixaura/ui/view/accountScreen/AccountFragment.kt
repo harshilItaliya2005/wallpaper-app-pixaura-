@@ -66,9 +66,6 @@ class AccountFragment : Fragment() {
         }
 
         binding.apply {
-            myAccount.setOnClickListener {
-                navController.navigate(R.id.action_accountFragment_to_myAccountFragment2)
-            }
             download.setOnClickListener {
                 navController.navigate(R.id.action_accountFragment_to_downloadFragment)
             }

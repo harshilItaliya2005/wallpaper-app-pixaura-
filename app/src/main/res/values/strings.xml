@@ -63,5 +63,6 @@
     <string name="header">Header</string>
     <string name="show_password">show password</string>
     <string name="gallery">Gallery</string>
+    <string name="downloaded_image">downloaded_image</string>
 
 </resources>

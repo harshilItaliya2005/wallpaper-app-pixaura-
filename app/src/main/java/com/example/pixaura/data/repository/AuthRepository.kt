@@ -5,10 +5,11 @@ import com.example.pixaura.data.network.authData.UserDao
 import javax.inject.Inject
 
 class AuthRepository @Inject constructor(
-    private val userDao: UserDao
-) {
-    private var currentUserEmail: String? = null
+    private val userDao: UserDao,
 
+) {
+
+    private var currentUserEmail: String = ""
     suspend fun register(user: User): Boolean {
         return try {
             val existing = userDao.getUserByEmail(user.email)
@@ -36,9 +37,16 @@ class AuthRepository @Inject constructor(
     suspend fun getUser(email: String): User? {
         return userDao.getUserByEmail(email)
     }
-
+    suspend fun updateUser(user: User): Boolean {
+        return try {
+            userDao.updateUser(user)  // uses @Update
+            true
+        } catch (e: Exception) {
+            false
+        }
+    }
     fun setCurrentUser(email: String) {
         currentUserEmail = email
     }
-    fun getCurrentUserEmail(): String? = currentUserEmail
+    fun getCurrentUserEmail(): String = currentUserEmail
 }
